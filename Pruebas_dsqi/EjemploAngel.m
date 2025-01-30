@@ -635,6 +635,22 @@ disp("Confidence Intervals all 6x9 vs all 4x6:");
 fprintf("Median: [%.2f, %.2f]\n", CIMedian_6x9_vs_4x6(1), CIMedian_6x9_vs_4x6(2));
 fprintf("Mean: [%.2f, %.2f]\n\n", CIMean_6x9_vs_4x6(1), CIMean_6x9_vs_4x6(2));
 
+% CI 6x9 vs 2x3
+CIMedian_6x9_vs_2x3 = estimateCIMedian(registros_6x9, registros_2x3, alph, iter);
+CIMean_6x9_vs_2x3 = estimateCIMean(registros_6x9, registros_2x3, alph, iter);
+
+disp("Confidence Intervals all 6x9 vs all 2x3:");
+fprintf("Median: [%.2f, %.2f]\n", CIMedian_6x9_vs_2x3(1), CIMedian_6x9_vs_2x3(2));
+fprintf("Mean: [%.2f, %.2f]\n\n", CIMean_6x9_vs_2x3(1), CIMean_6x9_vs_2x3(2));
+
+% CI 6x9 vs 1x1.5
+CIMedian_6x9_vs_1x15 = estimateCIMedian(registros_6x9, registros_1x15, alph, iter);
+CIMean_6x9_vs_1x15 = estimateCIMean(registros_6x9, registros_1x15, alph, iter);
+
+disp("Confidence Intervals all 6x9 vs all 1x1.5:");
+fprintf("Median: [%.2f, %.2f]\n", CIMedian_6x9_vs_1x15(1), CIMedian_6x9_vs_1x15(2));
+fprintf("Mean: [%.2f, %.2f]\n\n", CIMean_6x9_vs_1x15(1), CIMean_6x9_vs_1x15(2));
+
 % CI 4x6 vs 2x3
 CIMedian_4x6_vs_2x3 = estimateCIMedian(registros_4x6, registros_2x3, alph, iter);
 CIMean_4x6_vs_2x3 = estimateCIMean(registros_4x6, registros_2x3, alph, iter);
@@ -642,6 +658,14 @@ CIMean_4x6_vs_2x3 = estimateCIMean(registros_4x6, registros_2x3, alph, iter);
 disp("Confidence Intervals all 4x6 vs all 2x3:");
 fprintf("Median: [%.2f, %.2f]\n", CIMedian_4x6_vs_2x3(1), CIMedian_4x6_vs_2x3(2));
 fprintf("Mean: [%.2f, %.2f]\n\n", CIMean_4x6_vs_2x3(1), CIMean_4x6_vs_2x3(2));
+
+% CI 4x6 vs 1x1.5
+CIMedian_4x6_vs_1x15 = estimateCIMedian(registros_4x6, registros_1x15, alph, iter);
+CIMean_4x6_vs_1x15 = estimateCIMean(registros_4x6, registros_1x15, alph, iter);
+
+disp("Confidence Intervals all 4x6 vs all 1x1.5:");
+fprintf("Median: [%.2f, %.2f]\n", CIMedian_4x6_vs_1x15(1), CIMedian_4x6_vs_1x15(2));
+fprintf("Mean: [%.2f, %.2f]\n\n", CIMean_4x6_vs_1x15(1), CIMean_4x6_vs_1x15(2));
 
 % CI 2x3 vs 1x15
 CIMedian_2x3_vs_1x15 = estimateCIMedian(registros_2x3, registros_1x15, alph, iter);
