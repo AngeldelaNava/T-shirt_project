@@ -693,17 +693,17 @@ z_var_indexes_tumbado_4x6 = var(indexes_tumbado_4x6_v);
 z_mean_indexes_tumbado_6x9 = mean(indexes_tumbado_6x9_v);
 z_var_indexes_tumbado_6x9 = var(indexes_tumbado_6x9_v);
 
-disp("Means lying");
-fprintf("1x1.5: %f\n", z_mean_indexes_tumbado_1x15);
-fprintf("2x3: %f\n", z_mean_indexes_tumbado_2x3);
-fprintf("4x6: %f\n", z_mean_indexes_tumbado_4x6);
-fprintf("6x9: %f\n\n", z_mean_indexes_tumbado_6x9);
+disp("mSQI lying");
+fprintf("1x1.5: %.2f\n", z_mean_indexes_tumbado_1x15);
+fprintf("2x3: %.2f\n", z_mean_indexes_tumbado_2x3);
+fprintf("4x6: %.2f\n", z_mean_indexes_tumbado_4x6);
+fprintf("6x9: %.2f\n\n", z_mean_indexes_tumbado_6x9);
 
-disp("Vars lying");
-fprintf("1x1.5: %f\n", z_var_indexes_tumbado_1x15);
-fprintf("2x3: %f\n", z_var_indexes_tumbado_2x3);
-fprintf("4x6: %f\n", z_var_indexes_tumbado_4x6);
-fprintf("6x9: %f\n\n\n", z_var_indexes_tumbado_6x9);
+disp("Sd lying");
+fprintf("1x1.5: %.3f\n", sqrt(z_var_indexes_tumbado_1x15));
+fprintf("2x3: %.3f\n", sqrt(z_var_indexes_tumbado_2x3));
+fprintf("4x6: %.3f\n", sqrt(z_var_indexes_tumbado_4x6));
+fprintf("6x9: %.3f\n\n\n", sqrt(z_var_indexes_tumbado_6x9));
 
 z_mean_indexes_sentado_1x15 = mean(indexes_sentado_1x15_v);
 z_var_indexes_sentado_1x15 = var(indexes_sentado_1x15_v);
@@ -714,17 +714,17 @@ z_var_indexes_sentado_4x6 = var(indexes_sentado_4x6_v);
 z_mean_indexes_sentado_6x9 = mean(indexes_sentado_6x9_v);
 z_var_indexes_sentado_6x9 = var(indexes_sentado_6x9_v);
 
-disp("Means sitting");
-fprintf("1x1.5: %f\n", z_mean_indexes_sentado_1x15);
-fprintf("2x3: %f\n", z_mean_indexes_sentado_2x3);
-fprintf("4x6: %f\n", z_mean_indexes_sentado_4x6);
-fprintf("6x9: %f\n\n", z_mean_indexes_sentado_6x9);
+disp("mSQI sitting");
+fprintf("1x1.5: %.2f\n", z_mean_indexes_sentado_1x15);
+fprintf("2x3: %.2f\n", z_mean_indexes_sentado_2x3);
+fprintf("4x6: %.2f\n", z_mean_indexes_sentado_4x6);
+fprintf("6x9: %.2f\n\n", z_mean_indexes_sentado_6x9);
 
-disp("Vars sitting");
-fprintf("1x1.5: %f\n", z_var_indexes_sentado_1x15);
-fprintf("2x3: %f\n", z_var_indexes_sentado_2x3);
-fprintf("4x6: %f\n", z_var_indexes_sentado_4x6);
-fprintf("6x9: %f\n\n\n", z_var_indexes_sentado_6x9);
+disp("Sd sitting");
+fprintf("1x1.5: %.3f\n", sqrt(z_var_indexes_sentado_1x15));
+fprintf("2x3: %.3f\n", sqrt(z_var_indexes_sentado_2x3));
+fprintf("4x6: %.3f\n", sqrt(z_var_indexes_sentado_4x6));
+fprintf("6x9: %.3f\n\n\n", sqrt(z_var_indexes_sentado_6x9));
 
 z_mean_indexes_caminando_1x15 = mean(indexes_caminando_1x15_v);
 z_var_indexes_caminando_1x15 = var(indexes_caminando_1x15_v);
@@ -735,17 +735,17 @@ z_var_indexes_caminando_4x6 = var(indexes_caminando_4x6_v);
 z_mean_indexes_caminando_6x9 = mean(indexes_caminando_6x9_v);
 z_var_indexes_caminando_6x9 = var(indexes_caminando_6x9_v);
 
-disp("Means walking");
-fprintf("1x1.5: %f\n", z_mean_indexes_caminando_1x15);
-fprintf("2x3: %f\n", z_mean_indexes_caminando_2x3);
-fprintf("4x6: %f\n", z_mean_indexes_caminando_4x6);
-fprintf("6x9: %f\n\n", z_mean_indexes_caminando_6x9);
+disp("mSQI walking");
+fprintf("1x1.5: %.2f\n", z_mean_indexes_caminando_1x15);
+fprintf("2x3: %.2f\n", z_mean_indexes_caminando_2x3);
+fprintf("4x6: %.2f\n", z_mean_indexes_caminando_4x6);
+fprintf("6x9: %.2f\n\n", z_mean_indexes_caminando_6x9);
 
-disp("Vars walking");
-fprintf("1x1.5: %f\n", z_var_indexes_caminando_1x15);
-fprintf("2x3: %f\n", z_var_indexes_caminando_2x3);
-fprintf("4x6: %f\n", z_var_indexes_caminando_4x6);
-fprintf("6x9: %f\n\n\n", z_var_indexes_caminando_6x9);
+disp("Sd walking");
+fprintf("1x1.5: %.3f\n", sqrt(z_var_indexes_caminando_1x15));
+fprintf("2x3: %.3f\n", sqrt(z_var_indexes_caminando_2x3));
+fprintf("4x6: %.3f\n", sqrt(z_var_indexes_caminando_4x6));
+fprintf("6x9: %.3f\n\n\n", sqrt(z_var_indexes_caminando_6x9));
 
 z_mean_indexes_escaleras_1x15 = mean(indexes_escaleras_1x15_v);
 z_var_indexes_escaleras_1x15 = var(indexes_escaleras_1x15_v);
@@ -756,17 +756,17 @@ z_var_indexes_escaleras_4x6 = var(indexes_escaleras_4x6_v);
 z_mean_indexes_escaleras_6x9 = mean(indexes_escaleras_6x9_v);
 z_var_indexes_escaleras_6x9 = var(indexes_escaleras_6x9_v);
 
-disp("Means stairs");
-fprintf("1x1.5: %f\n", z_mean_indexes_escaleras_1x15);
-fprintf("2x3: %f\n", z_mean_indexes_escaleras_2x3);
-fprintf("4x6: %f\n", z_mean_indexes_escaleras_4x6);
-fprintf("6x9: %f\n\n", z_mean_indexes_escaleras_6x9);
+disp("mSQI stairs");
+fprintf("1x1.5: %.2f\n", z_mean_indexes_escaleras_1x15);
+fprintf("2x3: %.2f\n", z_mean_indexes_escaleras_2x3);
+fprintf("4x6: %.2f\n", z_mean_indexes_escaleras_4x6);
+fprintf("6x9: %.2f\n\n", z_mean_indexes_escaleras_6x9);
 
-disp("Vars stairs");
-fprintf("1x1.5: %f\n", z_var_indexes_escaleras_1x15);
-fprintf("2x3: %f\n", z_var_indexes_escaleras_2x3);
-fprintf("4x6: %f\n", z_var_indexes_escaleras_4x6);
-fprintf("6x9: %f\n", z_var_indexes_escaleras_6x9);
+disp("Sd stairs");
+fprintf("1x1.5: %.3f\n", sqrt(z_var_indexes_escaleras_1x15));
+fprintf("2x3: %.3f\n", sqrt(z_var_indexes_escaleras_2x3));
+fprintf("4x6: %.3f\n", sqrt(z_var_indexes_escaleras_4x6));
+fprintf("6x9: %.3f\n", sqrt(z_var_indexes_escaleras_6x9));
 
 
 y_CIMedian_tumbado_1x15vs2x3 = estimateCIMedian(indexes_tumbado_1x15_v, indexes_tumbado_2x3_v, alph, iter);
@@ -863,7 +863,7 @@ x_var_indexes_escaleras_4x6 = cellfun(@var, indexes_escaleras_4x6);
 x_var_indexes_escaleras_6x9 = cellfun(@var, indexes_escaleras_6x9);
 
 
-Histograms for tumbado
+% Histograms for tumbado
 figure;
 histogram(indexes_tumbado_1x15_v, 20);
 title(['Histogram for indexes lying 1x1.5'])
@@ -890,7 +890,7 @@ nexttile
 histogram(indexes_tumbado_6x9_v, 20);
 title(['Histogram for indexes lying 6x9'])
 
-Histograms for sentado
+% Histograms for sentado
 figure;
 histogram(indexes_sentado_1x15_v, 20);
 title(['Histogram for indexes sitting 1x1.5'])
@@ -917,7 +917,7 @@ nexttile
 histogram(indexes_sentado_6x9_v, 20);
 title(['Histogram for indexes sitting 6x9'])
 
-Histograms for caminando
+% Histograms for caminando
 figure;
 histogram(indexes_caminando_1x15_v, 20);
 title(['Histogram for indexes walking 1x1.5'])
@@ -944,7 +944,7 @@ nexttile
 histogram(indexes_caminando_6x9_v, 20);
 title(['Histogram for indexes walking 6x9'])
 
-Histograms for escaleras
+% Histograms for escaleras
 figure;
 histogram(indexes_escaleras_1x15_v, 20);
 title(['Histogram for indexes stairs 1x1.5'])
